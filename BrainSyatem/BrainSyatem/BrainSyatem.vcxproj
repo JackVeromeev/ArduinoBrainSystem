@@ -12,8 +12,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{C5F80730-F44F-4478-BDAE-6634EFC2CA88}</ProjectGuid>
-    <RootNamespace>BrainSystem</RootNamespace>
-    <ProjectName>BrainSystem</ProjectName>
+    <RootNamespace>BrainSyatem</RootNamespace>
+    <ProjectName>BrainSyatem</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -47,8 +47,8 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>C:\Program Files (x86)\Arduino\libraries;C:\Program Files (x86)\Arduino\hardware\arduino\avr\libraries;C:\Program Files (x86)\Arduino\examples\libraries;C:\Program Files (x86)\Arduino\hardware\arduino\avr\cores\arduino;C:\Program Files (x86)\Arduino\hardware\arduino\avr\variants\eightanaloginputs;E:\YandexDisk\5_SEM\CircuitDesign\BrainSystem\BrainSystem;C:\Program Files (x86)\Arduino\hardware\tools\avr/avr/include/;C:\Program Files (x86)\Arduino\hardware\tools\avr//avr/include/avr/;C:\Program Files (x86)\Arduino\hardware\tools\avr/lib\gcc\avr\4.8.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>E:\YandexDisk\5_SEM\CircuitDesign\BrainSystem\BrainSystem\__vm\.BrainSystem.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\Arduino\libraries;C:\Users\Jack\AppData\Local\arduino15\packages\arduino\hardware\avr\1.6.15\libraries;C:\Users\Jack\Documents\Arduino\libraries\libraries;C:\Users\Jack\AppData\Local\arduino15\packages\arduino\hardware\avr\1.6.15\cores\arduino;C:\Users\Jack\AppData\Local\arduino15\packages\arduino\hardware\avr\1.6.15\variants\eightanaloginputs;E:\YandexDisk\5_SEM\CircuitDesign\ArduinoBrainSystem\BrainSyatem\BrainSyatem;C:\Users\Jack\AppData\Local\arduino15\packages\arduino\tools\avr-gcc\4.9.2-atmel3.5.3-arduino2/avr/include/;C:\Users\Jack\AppData\Local\arduino15\packages\arduino\tools\avr-gcc\4.9.2-atmel3.5.3-arduino2//avr/include/avr/;C:\Users\Jack\AppData\Local\arduino15\packages\arduino\tools\avr-gcc\4.9.2-atmel3.5.3-arduino2/lib\gcc\avr\4.8.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>E:\YandexDisk\5_SEM\CircuitDesign\ArduinoBrainSystem\BrainSyatem\BrainSyatem\__vm\.BrainSyatem.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
       <PreprocessorDefinitions>__AVR_ATmega328p__;__AVR_ATmega328P__;F_CPU=16000000L;ARDUINO=106012;ARDUINO_AVR_NANO;ARDUINO_ARCH_AVR;__cplusplus=201103L;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
@@ -77,12 +77,17 @@
     <DebuggerFlavor>VisualMicroDebugger</DebuggerFlavor>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="BrainSystem.ino">
+    <None Include="BrainSyatem.ino">
       <FileType>CppCode</FileType>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="__vm\.BrainSystem.vsarduino.h" />
+    <ClInclude Include="BSMode.h" />
+    <ClInclude Include="Const.h" />
+    <ClInclude Include="GameMode.h" />
+    <ClInclude Include="TimeMode.h" />
+    <ClInclude Include="TwoNumberDial.h" />
+    <ClInclude Include="__vm\.BrainSyatem.vsarduino.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

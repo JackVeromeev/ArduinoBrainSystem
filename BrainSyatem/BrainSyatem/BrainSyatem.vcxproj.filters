@@ -15,11 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="BrainSystem.ino" />
+    <None Include="BrainSyatem.ino" />
   </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="__vm\.BrainSystem.vsarduino.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-  </ItemGroup>
+ 
 </Project>
