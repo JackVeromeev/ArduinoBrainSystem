@@ -84,7 +84,7 @@
   <ItemGroup>
     <ClInclude Include="BSMode.h" />
     <ClInclude Include="Const.h" />
-    <ClInclude Include="GameMode.h" />
+    <ClInclude Include="IGameMode.h" />
     <ClInclude Include="TimeMode.h" />
     <ClInclude Include="TwoNumberDial.h" />
     <ClInclude Include="__vm\.BrainSyatem.vsarduino.h" />
@@ -92,4 +92,9 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties arduino.upload.port="COM4" />
+    </VisualStudio>
+  </ProjectExtensions>
 </Project>

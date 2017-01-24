@@ -1,11 +1,10 @@
 #ifndef _BS_MODE
 #define _BS_MODE
-
 #include "Const.h"
-#include "GameMode.h"
+#include "IGameMode.h"
 
 class BSModeClass
-	: public GameModeClass
+	: public IGameMode
 {
 public:
 	BSModeClass() {}

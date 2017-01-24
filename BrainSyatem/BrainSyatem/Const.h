@@ -1,50 +1,39 @@
 #ifndef _CONSTANTS_h
 #define _CONSTANTS_h
 
-#define pl1 0
-#define pl2 1
-#define pl3 2
-#define pl4 3
-#define pl5 4
-
-
 #if defined(ARDUINO) && ARDUINO >= 100
 #include "Arduino.h"
 #else
 #include "WProgram.h"
 #endif
 
-typedef const uint8_t cui;
+typedef const uint8_t cui8;
+typedef uint8_t ui8;
 
-class ConstClass {
-public:
-	class DialConstClass
+struct ConstClass {
+	struct DialConst
 	{
-	public:
-		DialConstClass() {}
-		cui clockPin1 = 11;
-		cui clockPin2 = 12;
-		cui resetPin1 = 9;
-		cui resetPin2 = 10;
+		cui8 clockPin1 = 11;
+		cui8 clockPin2 = 12;
+		cui8 resetPin1 = 9;
+		cui8 resetPin2 = 10;
 	}Dial;
 
-	class BrainModeConstClass
+	struct BrainModeConst
 	{
-	public:
-		cui pin[5] = { 8, 1, 2, 3, 4 };
-	}BS;
+		cui8 pin[5] = { 8, 1, 2, 3, 4 };
+	}BrainSystem;
 
-	class MasterClass
+	struct MasterConst
 	{
-	public:
-		cui resetPin = 1;
-		cui startPin = 2;
-		cui changePin = 7;
+		cui8 resetPin = 1;
+		cui8 startPin = 2;
+		cui8 changePin = 7;
 	}Master;
 
-	cui interruptionMasterN = 0;
-	cui interruptionPlayerN = 0;
+	cui8 speakerPin = 8;
+	cui8 interruptionMasterN = 0;
+	cui8 interruptionPlayerN = 0;
 
-	ConstClass() { }
 } Const;
 #endif

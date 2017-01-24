@@ -1,7 +1,7 @@
 #ifndef _GAME_MODE
 #define _GAME_MODE
 
-class GameModeClass
+class IGameMode
 {
 public:
 	virtual void masterStart() = 0;

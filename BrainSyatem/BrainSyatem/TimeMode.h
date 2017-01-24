@@ -1,18 +1,22 @@
-#ifndef _TIME_MODE
+ #ifndef _TIME_MODE
 #define _TIME_MODE
 
 #include "Const.h"
-#include "GameMode.h"
+#include "IGameMode.h"
+#include "TwoNumberDial.h"
+
+
 
 class TimeModeClass :
-	public GameModeClass
+	public IGameMode
 {
-public:
 	enum Length { Twenty = 20, Thirty = 30, Minute = 60, Seventy = 70 } currentLength;
-	int currentTime;
+	enum Process {COUNTING, STOP} process;
+public:
 	TimeModeClass()
 	{
 		this->currentLength = Length::Twenty;
+		this->process = STOP;
 	}
 	void masterStart()
 	{
@@ -30,8 +34,8 @@ public:
 	{
 		attachInterrupt(Const.interruptionMasterN, this->interruptionMaster, RISING);
 		attachInterrupt(Const.interruptionPlayerN, this->interruptionPlayer, RISING);
-		currentTime = currentLength;
-		TwoNumberDial.setNumber(currentTime);
+		TwoNumberDial.setNumber(currentLength);
+		
 	}
 	void interruptionMaster()
 	{
@@ -41,7 +45,3 @@ public:
 }TimeMode;
 
 #endif // !_TIME_MODE
-
-
-
-
